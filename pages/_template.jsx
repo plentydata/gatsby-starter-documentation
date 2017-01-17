@@ -23,6 +23,7 @@ module.exports = React.createClass({
   render () {
     const docsActive = includes(this.props.location.pathname, '/docs/')
     const examplesActive = includes(this.props.location.pathname, '/examples/')
+    const homeActive = includes(this.props.location.pathname, '/')
 
     return (
       <div>
@@ -110,8 +111,8 @@ module.exports = React.createClass({
                 </Link><Link
                   to={prefixLink('/')}
                   style={{
-                    background: docsActive ? activeColors.bg : colors.bg,
-                    color: docsActive ? activeColors.fg : colors.fg,
+                    background: homeActive ? activeColors.bg : colors.bg,
+                    color: homeActive ? activeColors.fg : colors.fg,
                     float: 'right',
                     textDecoration: 'none',
                     paddingLeft: rhythm(1/2),
