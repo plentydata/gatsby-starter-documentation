@@ -107,6 +107,22 @@ module.exports = React.createClass({
                   }}
                 >
                   Documentation
+                </Link><Link
+                  to={prefixLink('/')}
+                  style={{
+                    background: docsActive ? activeColors.bg : colors.bg,
+                    color: docsActive ? activeColors.fg : colors.fg,
+                    float: 'right',
+                    textDecoration: 'none',
+                    paddingLeft: rhythm(1/2),
+                    paddingRight: rhythm(1/2),
+                    paddingBottom: rhythm(3/4),
+                    marginBottom: rhythm(-1),
+                    paddingTop: rhythm(1),
+                    marginTop: rhythm(-1),
+                  }}
+                >
+                  Home
                 </Link>
               </Span>
             </Grid>
