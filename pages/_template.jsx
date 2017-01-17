@@ -23,7 +23,7 @@ module.exports = React.createClass({
   render () {
     const docsActive = includes(this.props.location.pathname, '/docs/')
     const examplesActive = includes(this.props.location.pathname, '/examples/')
-    const homeActive = includes(this.props.location.pathname, '/')
+    const homeActive = this.props.location.pathname=='/'
 
     return (
       <div>
